@@ -6,6 +6,7 @@ import time from "../../public/Img/Group 177.png";
 import meddical from "../../public/Img/Meddical.png";
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Nav() {
 
@@ -62,12 +63,12 @@ export default function Nav() {
         </h1>
         <div className="sm:block hidden">
           <ul className="flex gap-4">
-            <li className="text-[18px] cursor-pointer activeNav hover:text-[#BFD2F8] transition-all">
+            <Link href="/"><li className="text-[18px] cursor-pointer activeNav hover:text-[#BFD2F8] transition-all">
               Home
-            </li>
-            <li className="text-[18px] cursor-pointer hover:text-[#BFD2F8] transition-all">
+            </li></Link>
+            <Link href="../about"><li className="text-[18px] cursor-pointer hover:text-[#BFD2F8] transition-all">
               About us
-            </li>
+            </li></Link>
             <li className="text-[18px] cursor-pointer hover:text-[#BFD2F8] transition-all">
               Services
             </li>
@@ -99,12 +100,12 @@ export default function Nav() {
         <div ref={list} className=" absolute bottom-[-360px] left-0 bg-[#BFD2F8] py-[20px] w-full  flex-col justify-center items-center gap-7 hidden">
           <div>
             <ul className="flex gap-4 flex-col text-[#1F2B6C] justify-center items-center">
-              <li className="text-[18px] cursor-pointer activeHidden hover:font-bold transition-all">
+              <Link href="/"><li className="text-[18px] cursor-pointer activeHidden hover:font-bold transition-all">
                 Home
-              </li>
-              <li className="text-[18px] cursor-pointer hover:font-bold transition-all">
+              </li></Link>
+              <Link href="../about"><li className="text-[18px] cursor-pointer hover:font-bold transition-all">
                 About us
-              </li>
+              </li></Link>
               <li className="text-[18px] cursor-pointer hover:font-bold transition-all">
                 Services
               </li>

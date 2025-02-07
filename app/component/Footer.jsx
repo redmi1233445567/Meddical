@@ -4,10 +4,11 @@ import log1 from "../../public/Img/Vector (19).png";
 import log2 from "../../public/Img/Vector (20).png";
 import log3 from "../../public/Img/Vector (21).png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="sm:px-[90px] px-[30px] w-full mt-[40px] bg-[#1F2B6C] text-white py-[20px] font-sans">
+    <div className="sm:px-[90px] px-[30px] w-full mt-[40px] bg-[#1F2B6C] text-white py-[20px] font-sans ">
       <div className="flex gap-6 md:justify-between border-b-gray-300 border-b-2 pb-[30px] mp-[30px] flex-wrap">
         <div>
           <p className="text-[#BFD2F8] text-[36px] font-title mb-[40px]">
@@ -22,7 +23,7 @@ export default function Footer() {
           <p>Appointment</p>
           <p>Doctors</p>
           <p>Services</p>
-          <p>About Us</p>
+          <Link href="../about"><p>About Us</p></Link>
         </div>
         <div>
           <p className="text-[18] font-bold mb-[40px]">Contact Us</p>
