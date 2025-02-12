@@ -42,7 +42,7 @@ export default function Specialties() {
   
 
   return (
-    <div className="sm:px-[90px] px-[30px] w-full mt-[60px]">
+    <div className="sm:px-[200px] px-[30px] w-full mt-[60px]">
       <div className="w-full flex flex-col items-center">
         <p className="text-[#159EEC] text-[18px] font-sans">Always Caring</p>
         <p className="text-[#1F2B6C] text-[32px] text-center">

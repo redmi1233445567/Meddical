@@ -54,14 +54,14 @@ export default function Book() {
   };
 
   return (
-    <div className="sm:px-[90px] px-[30px] w-full justify-between mt-[60px] flex gap-7 items-center relative py-[60px]">
+    <div className="sm:px-[200px] px-[30px] w-full justify-between mt-[60px] flex gap-7 items-center relative py-[60px]">
       <Image
         src={back}
         alt="Picture of the author"
-        className=" absolute top-0 left-0 h-full -z-20"
+        className=" absolute top-0 w-full left-0 h-full -z-20"
       />
       <div className=" absolute top-0 left-0 w-full h-full bg-white/60 -z-10"></div>
-      <div className="max-lg:hidden">
+      <div className="max-lg:hidden w-[49%]">
         <p className="text-[#159EEC] text-[32px] mb-[30px]">
           Book an Appointment
         </p>
@@ -72,8 +72,8 @@ export default function Book() {
           porttitor enim et.
         </p>
       </div>
-      <div className="max-md:flex max-md:justify-center max-md:flex-col">
-        <div className="grid grid-rows-7 grid-cols-2 md:w-[492px] w-[300px] md:h-[445px] h-[700px] rounded-t-md overflow-hidden max-md:grid-cols-1 max-md:grid-rows-11">
+      <div className="max-md:flex max-md:justify-center max-md:flex-col lg:w-[49%] w-full">
+        <div className="grid grid-rows-7 grid-cols-2  md:h-[445px] h-[700px] rounded-t-md overflow-hidden max-md:grid-cols-1 max-md:grid-rows-11">
           <input
             type="text"
             placeholder="Name"

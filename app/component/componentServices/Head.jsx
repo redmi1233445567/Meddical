@@ -1,5 +1,5 @@
 import React from "react";
-import black from "../../../public/Img/Blackdoctors 1.png";
+import black from "../../../public/Img/Rectangle 3 (1).png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,12 +15,12 @@ export default function Head() {
         </div>
       </div>
       <div className=" absolute top-0 left-0 w-full h-full bg-white/60 -z-10"></div>
-      <div className="w-full h-full flex justify-center max-md:gap-4 sm:px-[200px] px-[30px] max-md:items-center flex-col">
+      <div className="w-full h-full flex justify-center max-md:gap-4 sm:px-[90px] px-[30px] max-md:items-center flex-col">
         <div className="flex text-[#1F2B6C] text-[18px]">
             <Link href="/"><p>Home / </p></Link>
-            <Link href="../../about"><p className="font-bold">About</p></Link>
+            <Link href="../../services"><p className="font-bold">Services</p></Link>
         </div>
-        <p className="text-[#1F2B6C] text-[48px]">About us</p>
+        <p className="text-[#1F2B6C] text-[48px]">Our Services</p>
       </div>
     </div>
   );

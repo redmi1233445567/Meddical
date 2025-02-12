@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Wellcom() {
   return (
-    <div className="mt-[80px] sm:px-[90px] px-[30px] w-full ">
+    <div className="mt-[80px] sm:px-[200px] px-[30px] w-full ">
       <div className="w-full flex flex-col items-center">
         <p className="text-[#159EEC] text-[18px] font-sans">
           Welcome to Meddical

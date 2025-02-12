@@ -18,9 +18,9 @@ export default function Head() {
       <div className="w-full h-full flex justify-center max-md:gap-4 sm:px-[200px] px-[30px] max-md:items-center flex-col">
         <div className="flex text-[#1F2B6C] text-[18px]">
             <Link href="/"><p>Home / </p></Link>
-            <Link href="../../about"><p className="font-bold">About</p></Link>
+            <Link href="../../doctors"><p className="font-bold">Doctors</p></Link>
         </div>
-        <p className="text-[#1F2B6C] text-[48px]">About us</p>
+        <p className="text-[#1F2B6C] text-[48px]">Our Doctors</p>
       </div>
     </div>
   );

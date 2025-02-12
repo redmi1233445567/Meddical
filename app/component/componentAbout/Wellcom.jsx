@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Wellcom() {
   return (
-    <div className="sm:px-[150px] px-[30px] w-full flex gap-7 my-[60px] flex-wrap max-lg:justify-center ">
+    <div className="sm:px-[200px] px-[30px] w-full flex gap-[50px] my-[60px] flex-wrap max-lg:justify-center ">
       <Image src={img} alt="Picture of the author" />
       <div >
           <p className="text-[18px] font-sans text-[#159EEC]">Welcome to Hospital name</p>

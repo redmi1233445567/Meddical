@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="sm:px-[90px] px-[30px] w-full mt-[40px] bg-[#1F2B6C] text-white py-[20px] font-sans ">
+    <div className="sm:px-[200px] px-[30px] w-full mt-[40px] bg-[#1F2B6C] text-white py-[20px] font-sans ">
       <div className="flex gap-6 md:justify-between border-b-gray-300 border-b-2 pb-[30px] mp-[30px] flex-wrap">
         <div>
           <p className="text-[#BFD2F8] text-[36px] font-title mb-[40px]">
@@ -20,9 +20,9 @@ export default function Footer() {
         </div>
         <div>
           <p className="text-[18] font-bold mb-[40px]">Important Links</p>
-          <p>Appointment</p>
-          <p>Doctors</p>
-          <p>Services</p>
+          <Link href="../../appointment"><p>Appointment</p></Link>
+          <Link href="../doctors"><p>Doctors</p></Link>
+          <Link href="../services"><p>Services</p></Link>
           <Link href="../about"><p>About Us</p></Link>
         </div>
         <div>
