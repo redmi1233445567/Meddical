@@ -336,7 +336,7 @@ export default function ArticalSingel({ id }) {
               })}
             </div>
           </div>
-          <div className="p-[20px] border-gray-300 border-[1px] rounded-md mt-[30px] ">
+          <div className="p-[20px] border-gray-300 border-[1px] rounded-md my-[30px] ">
             <p className="text-[#1F2B6C] font-title text-[32px] mb-[20px]">
               Categories
             </p>
