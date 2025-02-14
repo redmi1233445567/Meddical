@@ -247,7 +247,7 @@ export default function ArticalSingel({ id }) {
             <p className="font-bold">{currentArticles[0].sec}</p>
           </div>
           <div>
-            <p className="text-[#1F2B6C] text-[32px] mb-[10px] font-title">
+            <p className="text-[#1F2B6C] smtext-[32px] max-sm:text-center mb-[10px] font-title">
               {currentArticles[0].title}
             </p>
             <div className="flex gap-5 mt-[10px] mb-[15px] text-[#000000] max-sm:text-[11px]">
