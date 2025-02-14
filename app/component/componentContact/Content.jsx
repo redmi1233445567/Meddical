@@ -11,7 +11,7 @@ export default function Content() {
     <div className="sm:px-[200px] px-[30px] my-[100px]">
       <Image src={img1} alt="Picture of the author" className="w-full" />
       <div className="my-[100px] flex gap-[60px] w-full justify-center flex-wrap">
-        <div className="w-[49%]">
+        <div className="xxl:w-[49%] w-full">
           <p className="text-[#159EEC] text-[18px] font-sans">Get in touch</p>
           <p className="text-[#1F2B6C] text-[32px]  mb-[60px]">Contact</p>
           <div className="max-md:flex max-md:justify-center max-md:flex-col">

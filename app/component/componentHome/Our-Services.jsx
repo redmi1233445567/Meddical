@@ -16,26 +16,26 @@ export default function Services() {
         </p>
         <p className="text-[#1F2B6C] text-[32px] text-center">Our Services</p>
       </div>
-      <div className="flex gap-8 justify-around max-lg:justify-center items-center flex-wrap mt-[60px] ">
-        <div className=" w-[20%] border-gray-300 border-2 rounded-md max-sm:grid grid-rows-[1fr, 1fr, auto] grid-cols-2 max-sm:overflow-hidden max-sm:min-w-[348px]">
-          <div className=" flex justify-center items-center gap-2 flex-col h-[130px] hover:bg-[#1F2B6C] hover:text-white transition-all cursor-pointer">
+      <div className="flex gap-5 justify-around max-lg:justify-center items-center flex-wrap mt-[60px] ">
+        <div className=" w-[20%] border-gray-300 border-2 rounded-md max-sm:overflow-hidden max-xl:flex max-xl:w-full">
+          <div className=" flex justify-center items-center gap-2 flex-col max-xl:w-[20%] xl:h-[130px] hover:bg-[#1F2B6C] hover:text-white transition-all cursor-pointer">
             <Image src={one} alt="Picture of the author" />
-            <p>Free Checkup</p>
+            <p className="max-xl:hidden">Free Checkup</p>
           </div>
-          <div className=" flex justify-center items-center gap-2 flex-col h-[130px] bg-[#1F2B6C] text-white cursor-pointer">
+          <div className=" flex justify-center items-center gap-2 flex-col max-xl:w-[20%] xl:h-[130px] bg-[#1F2B6C] text-white cursor-pointer">
             <Image src={two} alt="Picture of the author" />
-            <p>Cardiogram</p>
+            <p className="max-xl:hidden">Cardiogram</p>
           </div>
-          <div className=" flex justify-center items-center gap-2 flex-col h-[130px] hover:bg-[#1F2B6C] hover:text-white transition-all cursor-pointer">
+          <div className=" flex justify-center items-center gap-2 flex-col max-xl:w-[20%] xl:h-[130px] hover:bg-[#1F2B6C] hover:text-white transition-all cursor-pointer">
             <Image src={three} alt="Picture of the author" />
-            <p>Dna Testing</p>
+            <p className="max-xl:hidden">Dna Testing</p>
           </div>
-          <div className=" flex justify-center items-center gap-2 flex-col h-[130px] hover:bg-[#1F2B6C] hover:text-white transition-all cursor-pointer">
+          <div className=" flex justify-center items-center gap-2 flex-col max-xl:w-[20%] xl:h-[130px] hover:bg-[#1F2B6C] hover:text-white transition-all cursor-pointer">
             <Image src={four} alt="Picture of the author" />
-            <p>Blood Bank</p>
+            <p className="max-xl:hidden">Blood Bank</p>
           </div>
-          <div className=" col-span-2  text-center cursor-pointer py-3 max-sm:h-[80px] bg-[#1F2B6C] text-white hover:bg-[#159EEC] transition-all rounded-b-md">
-            <p>View All</p>
+          <div className=" col-span-2  text-center cursor-pointer py-3 max-xl:w-[20%] max-sm:h-[80px] bg-[#1F2B6C] text-white hover:bg-[#159EEC] transition-all xl:rounded-b-md">
+            <p >View All</p>
           </div>
         </div>
         <div className="sm:block hidden">
@@ -64,20 +64,20 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <p className="w-[470px] my-[30px]">
+          <p className="xl:w-[470px] my-[30px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             placerat scelerisque tortor ornare ornare. Quisque placerat
             scelerisque tortor ornare ornare Convallis felis vitae tortor augue.
             Velit nascetur proin massa in. Consequat faucibus porttitor enim et.
           </p>
-          <p className="w-[470px]">
+          <p className="xl:w-[470px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             placerat scelerisque. Convallis felis vitae tortor augue. Velit
             nascetur proin massa in.
           </p>
           
         </div>
-        <div className="sm:block hidden">
+        <div className="xl:block hidden">
             <div className="mb-[30px]">
               <Image src={react1} alt="Picture of the author" />
               <div className="w-full h-[5px] flex">

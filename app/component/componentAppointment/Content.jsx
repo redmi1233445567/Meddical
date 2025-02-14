@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import row from "../../../public/Img/Vector (13).png";
 import phone from "../../../public/Img/Group 188 (2).png";
 import Image from "next/image";
@@ -13,46 +13,81 @@ export default function Content() {
   const doctor = useRef();
   const depa = useRef();
 
-  const handellOpenAndCloseGender = () => {
-    if (gender.current.style.display == "none") {
-      gender.current.style.display = "block";
-    } else {
-      gender.current.style.display = "none";
-      console.log(gender.current.style.display);
-    }
-  };
-
-  const handellOpenAndCloseDate = () => {
-    if (date.current.style.display == "none") {
-      date.current.style.display = "block";
-    } else {
-      date.current.style.display = "none";
-    }
-  };
-
-  const handellOpenAndCloseTime = () => {
-    if (time.current.style.display == "none") {
-      time.current.style.display = "block";
-    } else {
-      time.current.style.display = "none";
-    }
-  };
-
-  const handellOpenAndCloseDoctor = () => {
-    if (doctor.current.style.display == "none") {
-      doctor.current.style.display = "block";
-    } else {
-      doctor.current.style.display = "none";
-    }
-  };
-
-  const handellOpenAndCloseDepa = () => {
-    if (depa.current.style.display == "none") {
-      depa.current.style.display = "block";
-    } else {
-      depa.current.style.display = "none";
-    }
-  };
+  const [firstGender, setFirstG] = useState(0);
+    const [firstDate, setFirstDate] = useState(0);
+    const [firstTime, setFirstTime] = useState(0);
+    const [firstDo, setFirstDo] = useState(0);
+    const [firstDepa, setFirstDepa] = useState(0);
+  
+    const handellOpenAndCloseGender = () => {
+      if (firstGender == 0) {
+        gender.current.style.display = "block";
+        setFirstG(firstGender + 1);
+      } else {
+        if (gender.current.style.display == "none") {
+          gender.current.style.display = "block";
+        } else {
+          gender.current.style.display = "none";
+          console.log(gender.current.style.display);
+        }
+      }
+    };
+  
+    const handellOpenAndCloseDate = () => {
+      if (firstDate == 0) {
+        date.current.style.display = "block";
+        setFirstDate(firstDate + 1);
+      } else {
+        if (date.current.style.display == "none") {
+          date.current.style.display = "block";
+        } else {
+          date.current.style.display = "none";
+        }
+      }
+      
+    };
+  
+    const handellOpenAndCloseTime = () => {
+      if (firstTime == 0) {
+        time.current.style.display = "block";
+        setFirstTime(firstTime + 1);
+      } else {
+        if (time.current.style.display == "none") {
+          time.current.style.display = "block";
+        } else {
+          time.current.style.display = "none";
+        }
+      }
+      
+    };
+  
+    const handellOpenAndCloseDoctor = () => {
+      if (firstDo == 0) {
+        doctor.current.style.display = "block";
+        setFirstDo(firstDo + 1);
+      } else {
+        if (doctor.current.style.display == "none") {
+          doctor.current.style.display = "block";
+        } else {
+          doctor.current.style.display = "none";
+        }
+      }
+      
+    };
+  
+    const handellOpenAndCloseDepa = () => {
+      if (firstDepa == 0) {
+        depa.current.style.display = "block";
+        setFirstDepa(firstDepa + 1);
+      } else {
+        if (depa.current.style.display == "none") {
+          depa.current.style.display = "block";
+        } else {
+          depa.current.style.display = "none";
+        }
+      }
+      
+    };
 
   return (
     <div>

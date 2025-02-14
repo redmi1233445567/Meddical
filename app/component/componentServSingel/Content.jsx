@@ -49,7 +49,7 @@ export default function Content({ id }) {
 
   return (
     <div className="flex justify-center items-start gap-7 flex-wrap sm:px-[150px] px-[30px] font-sans">
-      <div className="flex flex-col border-gray-300 border-[1px] rounded-md overflow-hidden max-lg:hidden">
+      <div className="flex flex-col border-gray-300 border-[1px] rounded-md overflow-hidden max-lg:hidden ">
         <div className="flex gap-2 justify-center items-center p-[30px] bg-[#1F2B6C] cursor-pointer text-[#BFD2F8]">
           <Image src={log1} alt="Picture of the author" />
           <p>{serv[id - 1].title}</p>

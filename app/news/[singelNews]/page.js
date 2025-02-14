@@ -1,5 +1,5 @@
+import Contact from "@/app/component/componentHome/Contact";
 import ArticalSingel from "@/app/component/componentSingelNews/ArticalSingel";
-import Head from "@/app/component/componentSingelNews/Head";
 import React from "react";
 
 export default  function page({ params }) {
@@ -11,6 +11,7 @@ export default  function page({ params }) {
   return (
     <div>
       <ArticalSingel id={id} />
+      <Contact /> 
     </div>
   );
 }

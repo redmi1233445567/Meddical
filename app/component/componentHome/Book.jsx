@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import row from "../../../public/Img/Vector (13).png";
 import back from "../../../public/Img/Rectangle 33.png";
 import Image from "next/image";
@@ -11,46 +11,80 @@ export default function Book() {
   const time = useRef();
   const doctor = useRef();
   const depa = useRef();
+  const [firstGender, setFirstG] = useState(0);
+  const [firstDate, setFirstDate] = useState(0);
+  const [firstTime, setFirstTime] = useState(0);
+  const [firstDo, setFirstDo] = useState(0);
+  const [firstDepa, setFirstDepa] = useState(0);
 
   const handellOpenAndCloseGender = () => {
-    if (gender.current.style.display == "none") {
+    if (firstGender == 0) {
       gender.current.style.display = "block";
+      setFirstG(firstGender + 1);
     } else {
-      gender.current.style.display = "none";
-      console.log(gender.current.style.display);
+      if (gender.current.style.display == "none") {
+        gender.current.style.display = "block";
+      } else {
+        gender.current.style.display = "none";
+        console.log(gender.current.style.display);
+      }
     }
   };
 
   const handellOpenAndCloseDate = () => {
-    if (date.current.style.display == "none") {
+    if (firstDate == 0) {
       date.current.style.display = "block";
+      setFirstDate(firstDate + 1);
     } else {
-      date.current.style.display = "none";
+      if (date.current.style.display == "none") {
+        date.current.style.display = "block";
+      } else {
+        date.current.style.display = "none";
+      }
     }
+    
   };
 
   const handellOpenAndCloseTime = () => {
-    if (time.current.style.display == "none") {
+    if (firstTime == 0) {
       time.current.style.display = "block";
+      setFirstTime(firstTime + 1);
     } else {
-      time.current.style.display = "none";
+      if (time.current.style.display == "none") {
+        time.current.style.display = "block";
+      } else {
+        time.current.style.display = "none";
+      }
     }
+    
   };
 
   const handellOpenAndCloseDoctor = () => {
-    if (doctor.current.style.display == "none") {
+    if (firstDo == 0) {
       doctor.current.style.display = "block";
+      setFirstDo(firstDo + 1);
     } else {
-      doctor.current.style.display = "none";
+      if (doctor.current.style.display == "none") {
+        doctor.current.style.display = "block";
+      } else {
+        doctor.current.style.display = "none";
+      }
     }
+    
   };
 
   const handellOpenAndCloseDepa = () => {
-    if (depa.current.style.display == "none") {
+    if (firstDepa == 0) {
       depa.current.style.display = "block";
+      setFirstDepa(firstDepa + 1);
     } else {
-      depa.current.style.display = "none";
+      if (depa.current.style.display == "none") {
+        depa.current.style.display = "block";
+      } else {
+        depa.current.style.display = "none";
+      }
     }
+    
   };
 
   return (

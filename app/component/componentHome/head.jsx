@@ -4,6 +4,7 @@ import Image from "next/image";
 import cal from "../../../public/Img/39.-Calendar.png";
 import team from "../../../public/Img/27.-Team.png";
 import cash from "../../../public/Img/15.-Cash.png";
+import Link from "next/link";
 
 export default function Head() {
   return (
@@ -22,9 +23,9 @@ export default function Head() {
             Leading the Way <br />
             in Medical Excellence
           </p>
-          <div className="text-[16px] bg-[#BFD2F8] text-[#1F2B6C] px-[35px] py-[13px] rounded-full font-[500] cursor-pointer">
+          <Link href="../../services"><div className="text-[16px] bg-[#BFD2F8] text-[#1F2B6C] px-[35px] py-[13px] rounded-full font-[500] cursor-pointer hover:scale-[90%] transition-all">
             Our Services
-          </div>
+          </div></Link>
         </div>
       </div>
       <div className=" absolute bottom-[-6%] left-0 sm:flex gap-5 justify-center w-full z-[70] hidden">

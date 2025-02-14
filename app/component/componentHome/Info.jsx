@@ -117,7 +117,7 @@ export default function Info() {
           return (
             <div
               key={ind}
-              className="flex gap-5 items-center bg-white pr-[20px] max-md:flex-col max-md:p-[20px] w-[49%]"
+              className="flex gap-5 items-center bg-white pr-[20px] max-md:flex-col max-md:p-[20px] md:w-[49%]"
             >
               <Image src={news[0]} alt="Picture of the author" />
               <div>
