@@ -106,6 +106,10 @@ export default function Nav({}) {
     }
   };
 
+  const handellCloseAuto = () => {
+    list.current.style.display = "none";
+  }
+
   return (
     <div>
       {/* start head */}
@@ -231,6 +235,7 @@ export default function Nav({}) {
             <ul className="flex gap-4 flex-col text-[#1F2B6C] justify-center items-center">
               <Link href="/">
                 <li
+                onClick={handellCloseAuto}
                   className={`text-[18px] cursor-pointer  hover:font-bold transition-all ${
                     navList[0][1] ? " font-bold" : "text-[#1F2B6C]"
                   }`}
@@ -240,6 +245,7 @@ export default function Nav({}) {
               </Link>
               <Link href="../about">
                 <li
+                onClick={handellCloseAuto}
                   className={`text-[18px] cursor-pointer hover:font-bold transition-all ${
                     navList[1][1] ? " font-bold" : "text-[#1F2B6C]"
                   }`}
@@ -249,6 +255,7 @@ export default function Nav({}) {
               </Link>
               <Link href="../services">
                 <li
+                onClick={handellCloseAuto}
                   className={`text-[18px] cursor-pointer hover:font-bold transition-all ${
                     navList[2][1] ? " font-bold" : "text-[#1F2B6C]"
                   }`}
@@ -258,6 +265,7 @@ export default function Nav({}) {
               </Link>
               <Link href="../doctors">
                 <li
+                onClick={handellCloseAuto}
                   className={`text-[18px] cursor-pointer hover:font-bold transition-all ${
                     navList[3][1] ? " font-bold" : "text-[#1F2B6C]"
                   }`}
@@ -267,6 +275,7 @@ export default function Nav({}) {
               </Link>
               <Link href="../news">
                 <li
+                onClick={handellCloseAuto}
                   className={`text-[18px] cursor-pointer hover:font-bold transition-all ${
                     navList[4][1] ? " font-bold" : "text-[#1F2B6C]"
                   }`}
@@ -276,6 +285,7 @@ export default function Nav({}) {
               </Link>
               <Link href="../contact">
                 <li
+                onClick={handellCloseAuto}
                   className={`text-[18px] cursor-pointer hover:font-bold transition-all ${
                     navList[5][1] ? " font-bold" : "text-[#1F2B6C]"
                   }`}
@@ -286,7 +296,7 @@ export default function Nav({}) {
             </ul>
           </div>
           <Link href="../appointment">
-            <div className="lg:hidden hover:scale-[90%] transition-all text-[16px] text-[#BFD2F8] bg-[#1F2B6C] px-[35px] py-[13px] rounded-full font-[500] cursor-pointer">
+            <div onClick={handellCloseAuto} className="lg:hidden hover:scale-[90%] transition-all text-[16px] text-[#BFD2F8] bg-[#1F2B6C] px-[35px] py-[13px] rounded-full font-[500] cursor-pointer">
               Appointment
             </div>
           </Link>
