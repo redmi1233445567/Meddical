@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../../../public/Img/Mapview.png";
 import Image from "next/image";
 import log1 from "../../../public/Img/Group 188 (1).png"
 import log2 from "../../../public/Img/Group 178 (1).png"
@@ -9,13 +8,13 @@ import log4 from "../../../public/Img/Group 177 (1).png"
 export default function Content() {
   return (
     <div className="sm:px-[200px] px-[30px] my-[100px]">
-      <Image src={img1} alt="Picture of the author" className="w-full" />
-      <div className="my-[100px] flex gap-[60px] w-full justify-center flex-wrap">
-        <div className="xxl:w-[49%] w-full">
+      <div className="w-full h-[500px] max-lg:h-[400px] max-sm:h-[300px]"><iframe width="100%" height="100%"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Alexandria,%20city,%20Egypt+(Adress)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+      <div className="my-[100px] flex gap-[10px] w-full justify-center flex-wrap">
+        <div className="lg:w-[49%] w-full">
           <p className="text-[#159EEC] text-[18px] font-sans">Get in touch</p>
           <p className="text-[#1F2B6C] text-[32px]  mb-[60px]">Contact</p>
           <div className="max-md:flex max-md:justify-center max-md:flex-col">
-            <div className="grid grid-rows-5  grid-cols-2  rounded-t-md overflow-hidden sm:w-full">
+            <div className="grid grid-rows-7  grid-cols-2  rounded-t-md overflow-hidden sm:w-full">
               <input
                 type="text"
                 placeholder="Name"
@@ -35,15 +34,15 @@ export default function Content() {
 
               <textarea
                 placeholder="Message"
-                className=" appearance-none bg-[#1F2B6C] p-2 text-white col-span-2 row-span-3 focus:outline-none border-gray-300 border-[1px] border-b-none"
+                className=" appearance-none bg-[#1F2B6C] p-2 text-white col-span-2 row-span-5 focus:outline-none border-gray-300 border-[1px] border-b-none"
               />
             </div>
-            <div className="w-full text-center py-3 bg-[#BFD2F8] text-[#1F2B6C] font-sans hover:bg-[#159EEC] hover:font-bold transition-all cursor-pointer">
+            <div className="w-full text-center py-2 bg-[#BFD2F8] text-[#1F2B6C] font-sans hover:bg-[#159EEC] hover:font-bold transition-all cursor-pointer">
               SUPMIT
             </div>
           </div>
         </div>
-        <div className="grid sm:grid-rows-2 sm:grid-cols-2 gap-[20px] ">
+        <div className="grid lg:grid-rows-2 lg:grid-cols-2 gap-[5px] ">
           <div className="bg-[#BFD2F8] text-[#1F2B6C] flex flex-col justify-center p-[20px] w-[233px] h-[233px] text-[16px] gap-3">
             <Image src={log1} alt="Picture of the author" />
             <p className="font-bold text-[18px]">Emergency</p>

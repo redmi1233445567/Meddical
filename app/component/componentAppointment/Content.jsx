@@ -1,93 +1,8 @@
-"use client";
 import React from "react";
-import { useRef, useState } from "react";
-import row from "../../../public/Img/Vector (13).png";
 import phone from "../../../public/Img/Group 188 (2).png";
 import Image from "next/image";
-import map from "../../../public/Img/Mapview.png"
 
 export default function Content() {
-  const gender = useRef();
-  const date = useRef();
-  const time = useRef();
-  const doctor = useRef();
-  const depa = useRef();
-
-  const [firstGender, setFirstG] = useState(0);
-    const [firstDate, setFirstDate] = useState(0);
-    const [firstTime, setFirstTime] = useState(0);
-    const [firstDo, setFirstDo] = useState(0);
-    const [firstDepa, setFirstDepa] = useState(0);
-  
-    const handellOpenAndCloseGender = () => {
-      if (firstGender == 0) {
-        gender.current.style.display = "block";
-        setFirstG(firstGender + 1);
-      } else {
-        if (gender.current.style.display == "none") {
-          gender.current.style.display = "block";
-        } else {
-          gender.current.style.display = "none";
-          console.log(gender.current.style.display);
-        }
-      }
-    };
-  
-    const handellOpenAndCloseDate = () => {
-      if (firstDate == 0) {
-        date.current.style.display = "block";
-        setFirstDate(firstDate + 1);
-      } else {
-        if (date.current.style.display == "none") {
-          date.current.style.display = "block";
-        } else {
-          date.current.style.display = "none";
-        }
-      }
-      
-    };
-  
-    const handellOpenAndCloseTime = () => {
-      if (firstTime == 0) {
-        time.current.style.display = "block";
-        setFirstTime(firstTime + 1);
-      } else {
-        if (time.current.style.display == "none") {
-          time.current.style.display = "block";
-        } else {
-          time.current.style.display = "none";
-        }
-      }
-      
-    };
-  
-    const handellOpenAndCloseDoctor = () => {
-      if (firstDo == 0) {
-        doctor.current.style.display = "block";
-        setFirstDo(firstDo + 1);
-      } else {
-        if (doctor.current.style.display == "none") {
-          doctor.current.style.display = "block";
-        } else {
-          doctor.current.style.display = "none";
-        }
-      }
-      
-    };
-  
-    const handellOpenAndCloseDepa = () => {
-      if (firstDepa == 0) {
-        depa.current.style.display = "block";
-        setFirstDepa(firstDepa + 1);
-      } else {
-        if (depa.current.style.display == "none") {
-          depa.current.style.display = "block";
-        } else {
-          depa.current.style.display = "none";
-        }
-      }
-      
-    };
 
   return (
     <div>
@@ -111,24 +26,15 @@ export default function Content() {
                 placeholder="Name"
                 className=" appearance-none focus:outline-none bg-[#1F2B6C] p-2 text-white border-gray-300 border-[1px]"
               />
-              <div className=" relative flex justify-between text-white bg-[#1F2B6C] items-center p-2 border-gray-300 border-[1px]">
-                <p>Gender</p>
-                <Image
-                  src={row}
-                  alt="Picture of the author"
-                  className=" cursor-pointer hover:scale-[0.9]"
-                  onClick={handellOpenAndCloseGender}
-                />
-                <div
-                  ref={gender}
-                  className=" hidden absolute left-0 bottom-[-110%] bg-[#BFD2F8] p-2 text-center w-full"
-                >
-                  <p className=" cursor-pointer border-b-white border-b-[2px]">
-                    Male
-                  </p>
-                  <p className=" cursor-pointer">Female</p>
-                </div>
-              </div>
+              <select
+                name="Gender"
+                id="Gender-select"
+                className="bg-[#1F2B6C] text-white focus:outline-none border-gray-300 border-[1px]"
+              >
+                <option value="">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
               <input
                 type="email"
                 placeholder="Email"
@@ -139,84 +45,43 @@ export default function Content() {
                 placeholder="Phone"
                 className=" appearance-none focus:outline-none bg-[#1F2B6C] p-2 text-white border-gray-300 border-[1px]"
               />
-              <div className="relative flex justify-between text-white bg-[#1F2B6C] items-center p-2 border-gray-300 border-[1px]">
-                <p>Date</p>
-                <Image
-                  src={row}
-                  alt="Picture of the author"
-                  className=" cursor-pointer hover:scale-[0.9]"
-                  onClick={handellOpenAndCloseDate}
-                />
-                <div
-                  ref={date}
-                  className=" hidden absolute left-0 z-10 bottom-[-110%] bg-[#BFD2F8] p-2 text-center w-full"
-                >
-                  <p className=" cursor-pointer border-b-white border-b-[2px]">
-                    12/8/2025
-                  </p>
-                  <p className=" cursor-pointer border-b-white border-b-[2px]">
-                    15/8/2025
-                  </p>
-                  <p className=" cursor-pointer">28/8/2025</p>
-                </div>
-              </div>
-              <div className="relative flex justify-between text-white bg-[#1F2B6C] items-center p-2 border-gray-300 border-[1px]">
-                <p>Time</p>
-                <Image
-                  src={row}
-                  alt="Picture of the author"
-                  className=" cursor-pointer hover:scale-[0.9]"
-                  onClick={handellOpenAndCloseTime}
-                />
-                <div
-                  className=" hidden absolute left-0 bottom-[-110%] z-10 bg-[#BFD2F8] p-2 text-center w-full"
-                  ref={time}
-                >
-                  <p className=" cursor-pointer border-b-white border-b-[2px]">
-                    10pm
-                  </p>
-                  <p className=" cursor-pointer">11pm</p>
-                </div>
-              </div>
-              <div className="relative flex justify-between text-white bg-[#1F2B6C] items-center p-2 border-gray-300 border-[1px]">
-                <p>Doctor</p>
-                <Image
-                  src={row}
-                  alt="Picture of the author"
-                  className=" cursor-pointer hover:scale-[0.9]"
-                  onClick={handellOpenAndCloseDoctor}
-                />
-                <div
-                  className=" hidden absolute left-0 bottom-[-110%] z-10 bg-[#BFD2F8] p-2 text-center w-full"
-                  ref={doctor}
-                >
-                  <p className=" cursor-pointer border-b-white border-b-[2px]">
-                    Ahmed
-                  </p>
-                  <p className=" cursor-pointer">Sayed</p>
-                </div>
-              </div>
-              <div className="relative flex justify-between text-white bg-[#1F2B6C] items-center p-2 border-gray-300 border-[1px]">
-                <p>Department</p>
-                <Image
-                  src={row}
-                  alt="Picture of the author"
-                  className=" cursor-pointer hover:scale-[0.9]"
-                  onClick={handellOpenAndCloseDepa}
-                />
-                <div
-                  className=" hidden absolute left-0 bottom-[-110%] bg-[#BFD2F8] p-2 text-center w-full"
-                  ref={depa}
-                >
-                  <p className=" cursor-pointer border-b-white border-b-[2px]">
-                    Surgery
-                  </p>
-                  <p className=" cursor-pointer border-b-white border-b-[2px]">
-                    Examination
-                  </p>
-                  <p className=" cursor-pointer">Neurology</p>
-                </div>
-              </div>
+              <select
+                name="Date"
+                id="Date-select"
+                className="bg-[#1F2B6C] text-white focus:outline-none border-gray-300 border-[1px]"
+              >
+                <option value="">Date</option>
+                <option value="12/7/2025">12/7/2025</option>
+                <option value="13/8/2025">13/8/2025</option>
+              </select>
+              <select
+                name="Time"
+                id="Time-select"
+                className="bg-[#1F2B6C] text-white focus:outline-none border-gray-300 border-[1px]"
+              >
+                <option value="">Time</option>
+                <option value="10pm">10pm</option>
+                <option value="1pm">1pm</option>
+              </select>
+              <select
+                name="Doctor"
+                id="Doctor-select"
+                className="bg-[#1F2B6C] text-white focus:outline-none border-gray-300 border-[1px]"
+              >
+                <option value="">Doctor</option>
+                <option value="Ahmed">Ahmed</option>
+                <option value="Sayed">Sayed</option>
+              </select>
+              <select
+                name="Department"
+                id="Department-select"
+                className="bg-[#1F2B6C] text-white focus:outline-none border-gray-300 border-[1px]"
+              >
+                <option value="">Department</option>
+                <option value="Surgery">Surgery</option>
+                <option value="Examination">Examination</option>
+                <option value="Neurology">Neurology</option>
+              </select>
               <textarea
                 placeholder="Message"
                 className=" appearance-none bg-[#1F2B6C] p-2 text-white md:col-span-2 row-span-3 focus:outline-none border-gray-300 border-[1px] border-b-none"
@@ -276,7 +141,13 @@ export default function Content() {
           </div>
         </div>
       </div>
-      <Image src={map} alt="Picture of the author" className="sm:px-[200px] px-[30px] w-full"/>
+      <div className="w-full sm:px-[200px] px-[30px] h-[500px] max-lg:h-[400px] max-sm:h-[300px]">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Alexandria,%20city,%20Egypt+(Adress)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
+      </div>
     </div>
   );
 }

@@ -112,12 +112,12 @@ export default function Info() {
           News
         </p>
       </div>
-      <div className="flex gap-7 flex-wrap justify-center">
+      <div className="flex gap-y-3 flex-wrap justify-between">
         {newsData[numP].map((news, ind) => {
           return (
             <div
               key={ind}
-              className="flex gap-5 items-center bg-white pr-[20px] max-md:flex-col max-md:p-[20px] md:w-[49%]"
+              className="flex gap-5 items-center bg-white pr-[20px] max-lg:flex-col max-lg:p-[20px] md:w-[49%] rounded-md hover:shadow-md hover:-translate-y-2 transition-all"
             >
               <Image src={news[0]} alt="Picture of the author" />
               <div>

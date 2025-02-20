@@ -208,7 +208,7 @@ export default function Nav({}) {
             </Link>
           </ul>
         </div>
-        <div className="flex gap-8 items-center ">
+        <div className="flex gap-8 items-center">
           <div className=" relative p-0 cursor-pointer hover:animate-pulse">
             <div className="w-[20px] h-[20px] rounded-full border-2 border-white"></div>
             <div className="w-[2px] h-[5px] bg-white rotate-[-45deg] absolute top-[17px] left-[18px]"></div>
@@ -221,7 +221,7 @@ export default function Nav({}) {
             <div className="w-[30px] h-[2px] mb-[5px] bg-white rounded-lg"></div>
             <div className="w-[30px] h-[2px] bg-white rounded-lg"></div>
           </div>
-          <Link href="../appointment">
+          <Link className="lg:block hidden" href="../appointment">
             <div className="lg:block hidden hover:scale-[90%] transition-all text-[16px] bg-[#BFD2F8] text-[#1F2B6C] px-[35px] py-[13px] rounded-full font-[500] cursor-pointer">
               Appointment
             </div>
